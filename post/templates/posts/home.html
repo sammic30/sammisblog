@@ -1,0 +1,16 @@
+<h1>Welcome to Sammi's Blog</h1>
+
+<h2>Latest Posts</h2>
+
+{% for post in posts.all %}
+
+{{ post.title }}
+<br />
+{{ post.pub_date_neat }}
+<br />
+<img src="{{ post.image }}"
+<br />
+{{ post.summary }}
+<br />
+<br />
+{% endfor %}
